@@ -64,6 +64,26 @@ img {
   background-color: #ba2732;
 }
 
+.main-search input{
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  
+  background-color: transparent;
+  border: none;
+}
+
+/*
+.main-search:hover {
+  background-color: 212a3a;
+}
+
+.main-search input:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+*/
+
 .bookmarks:hover,
 .bookmarks:focus,
 .basket:hover,
@@ -604,3 +624,34 @@ img {
 }
 */
 
+/* Окно добавления товара в корзину */
+
+.add-to-basket {
+  background-image: url(../img/form-check.png);
+  background-repeat: no-repeat;
+}
+
+.add-to-basket p {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.order-button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.make-order:hover {
+  background-color: #b22832;
+}
+
+.continue-shopping {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.continue-shopping:hover {
+  color: #ffffff;
+  background-color: #999999;
+}
