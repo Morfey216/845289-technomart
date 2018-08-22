@@ -402,4 +402,53 @@ img {
   text-transform: uppercase;
 }
 
+/* Блок о компании и контакты */
 
+.about h2,
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about p,
+.contacts p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-button,
+.contacts-button {
+  font-size: 14px;
+  line-height: 18px;
+  
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.about-button:hover,
+.about-button:focus,
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: #ca2c37;
+}
+
+.about-button:active,
+.contacts-button:active {
+  background-color: #ba2732;
+}
+
+.delivery-lines {
+  list-style: none;
+}
+ 
+.delivery-lines li { 
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Футер */
