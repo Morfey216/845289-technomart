@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="main-header">
-      <section class="top-menu">
+      <section class="order-navigation">
         <a class="logo"><img src="img/header-logo.png" width="110" height="18" alt="Техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <label class="main-search">
@@ -66,47 +66,49 @@
         <h2 class="visually-hidden">Промоакции</h2>
         
         <ul class="promo-list">
-          <li class="promo-item">
+          <li class="promo-item materials">
             <span class="flag flag-new">Новинка</span>
             <h3>Материалы</h3>
-            <a class="promo-button" href="#">На любой вкус</a>
+            <a class="button promo-button" href="#">На любой вкус</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item tools">
             <h3>Инструмент</h3>
-            <a class="promo-button" href="#">На все случаи</a>
+            <a class="button promo-button" href="#">На все случаи</a>
           </li>
-          <li class="promo-item">
+          <li class="promo-item machines">
             <h3>Техника</h3>
-            <a class="promo-button" href="#">Для стройки</a>
+            <a class="button promo-button" href="#">Для стройки</a>
           </li>
-          <li class="promo-item">
-            <h3>Скидки 50%</h3>
-            <a class="promo-button" href="#">На 350 товаров</a>
-          </li>
-          <li class="promo-item">
-            <h3>Доставка</h3>
-            <a class="promo-button" href="#">Бесплатно</a>
-          </li>
-        </ul>
-        
-        <ul class="promo-slider">
-          <li class="promo-slider-item">
           
-            
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <a class="button slider-item-button" href="catalog.html">Открыть каталог</a>
+        </ul>
+        
+        <div class="promo-slider">
+          <ul class="promo-slider-list">
+            <li class="promo-slider-item promoslider-1">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="button slider-item-button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="promo-slider-item promoslider-2">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button slider-item-button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+          <button class="button slider-button slider-button-back" type="button">Назад</button>
+          <button class="button slider-button slider-button-next" type="button">Вперед</button>
+        </div>
+        
+        <ul class="promo-list promo-services-list">
+          <li class="promo-item promo-discounts">
+            <h3>Скидки 50%</h3>
+            <a class="button promo-button" href="#">На 350 товаров</a>
           </li>
-          <li class="promo-slider-item">
-            
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки</p>
-            <a class="button slider-item-button" href="catalog.html">Открыть каталог</a>
+          <li class="promo-item promo-delivery">
+            <h3>Доставка</h3>
+            <a class="button promo-button" href="#">Бесплатно</a>
           </li>
         </ul>
-        <button class="button slider-button slider-button-back" type="button">Назад</button>
-        <button class="button slider-button slider-button-next" type="button">Вперед</button>
-        
       </section>
       
       <section class="popular">
