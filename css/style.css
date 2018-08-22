@@ -159,6 +159,46 @@ img {
   color: rgba(0, 0, 0, 0.3)
 }
 
+.active-user p {
+  background-color: #ffffff;
+}
+
+.active-user-name:hover,
+.active-user-name:focus,
+.logout-link:hover,
+.logout-link:focus {
+  color: #000000;
+}
+
+.active-user-name:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.logout-link:hover path,
+.logout-link:focus path {
+  fill: #000000;
+}
+
+.active-user-navigation{
+  list-style: none;
+}
+
+.active-user-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.active-user-navigation a:hover,
+.active-user-navigation a:focus {
+  color: #ee3643;
+}
+
+.active-user-navigation a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .main-navigation {
   color: #ffffff;
   background-color: #293449;
@@ -185,7 +225,8 @@ img {
   background-color: #1d2739;
 }
 
-/* Промо-блок */
+
+/* Промо-блок на главной */
 
 .promo-list {
   list-style: none;
@@ -474,6 +515,9 @@ img {
   font-size: 18px;
   line-height: 20px;
 }
+
+
+
 
 /* Футер */
 
