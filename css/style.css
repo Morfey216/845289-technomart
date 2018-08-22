@@ -545,7 +545,71 @@ img {
   text-transform: uppercase;
 }
 
+/* Форма фильтрации товаров */
 
+.filters {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.filters fieldset {
+  border:none;
+}
+
+.filters legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.skroll,
+.price-fild {
+  background-color: #f7f3ec;
+}
+
+.price-fild {
+  border: none;
+  border-radius: 3px;
+}
+
+.filter span {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.filter ul {
+  
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  border-color: #bdc6ca;
+}
+
+.filter-button:active {
+  border-color: #ee3643;
+}
 
 
 /* Футер */
