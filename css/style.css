@@ -658,6 +658,54 @@ img {
   fill: #ee3643;
 }
 
+/* Блок каталога товаров (карточки товаров) */
+
+.catalog-list {
+  list-style: none;
+}
+
+/* Постраничная навигация */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item  a{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+
+}
+
+.pagination-item  a:hover,
+.pagination-item  a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination-item  a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current a {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  background-color: #ee3643;
+  color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+
 
 /* Футер */
 
