@@ -516,6 +516,35 @@ img {
   line-height: 20px;
 }
 
+/* Стилизация страницы каталога */
+
+/* Хлебные крошки */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.instrument-caption {
+  background-color: #f2f6f8;
+}
+
+.instrument-caption h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 
 
 
