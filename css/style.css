@@ -342,4 +342,64 @@ img {
   background-color: #ba2732;
 }
 
+/* Популярные производители */
+
+.brand-list {
+  list-style: none;
+}
+
+/* Блок сервисов */
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-control-list,
+.services-slider-list {
+  list-style: none;
+}
+
+.service-control-button {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+  background-color: #32425c
+}
+
+.service-control-button:hover,
+.service-control-button:focus {
+  background-color: #293449;
+}
+
+.service-control-button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+
+.services-slider-list h3 {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 
