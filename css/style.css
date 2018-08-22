@@ -31,6 +31,7 @@ img {
   
   background-color: #ee3643;
   border: none;
+  border-radius:3px;
 }
 
 .main-header {
@@ -122,8 +123,11 @@ img {
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
+  text-align: center;
   color: #000000;
+  vertical-align: middle;
   background-color: #ffffff;
+  
 }
 
 .user-button:hover,
@@ -541,3 +545,62 @@ img {
   color: #ee3643;
   text-decoration: none;
 }
+
+/* Модальные окна */
+
+.modal {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.modal-control {
+  background-color: #f4f4f4;
+}
+
+.write-us label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+
+.write-us input[type="text"],
+.write-us input[type="email"],
+.write-us textarea {
+  
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #999999;
+      
+  
+  border: 2px solid #d7dcde;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+  border: 2px solid #b5b5b5;
+  
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  border: 2px solid #ee3643;
+  
+}
+
+.writeus-button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.writeus-button:hover {
+ background-color: #b22832;
+}
+
+/* 
+.modal-map {
+  background: url(../img/modal-map.jpg) no-repeat;
+}
+*/
+
