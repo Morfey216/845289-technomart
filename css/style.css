@@ -278,3 +278,68 @@ img {
 
 /* Популярные товары*/
 
+.popular-header {
+  background-color: #f9f5f0;
+}
+
+.popular-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular-button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.popular-button:hover,
+.popular-button:focus {
+  background-color: #ca2c37;
+}
+
+.popular-button:active {
+  background-color: #ba2732;
+}
+
+.popular-list {
+  list-style: none;
+}
+
+.item-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.discount {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.price {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.price:hover,
+.price:focus {
+  background-color: #ca2c37;
+}
+
+.price:active {
+  background-color: #ba2732;
+}
+
+
