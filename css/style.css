@@ -169,26 +169,47 @@ img {
 
 .promo-item {
   /*размер*/
+  width: 300px;
+  min-height: 123px;
 }
 
 .materials {
-  background-color: #ffbf47;
+  background: #ffbf47 url(../img/icon-1.png) no-repeat;
+  background-position: 213px, 31px;
 }
 
 .tools {
-  background-color: #3bbce3;
+  background: #3bbce3 url(../img/icon-2.png) no-repeat;
+  background-position: 197px, 33px;
 }
 
 .machines {
-  background-color: #dc91d8;
+  background: #dc91d8 url(../img/icon-3.png) no-repeat;
+  background-position: 191px, 31px;
 }
 
 .promo-discounts {
-  background-color: #8ed78f;
+  background: #8ed78f url(../img/icon-4.png) no-repeat;
+  background-position: 196px, 26px;
 }
 
 .promo-delivery {
-  background-color: #ffbf47;
+  background: #ffbf47 url(../img/icon-5.png) no-repeat;
+  background-position: 191px, 32px;
+}
+
+.flag {
+  margin: 0;
+  padding: 0;
+
+  background-repeat: no-repeat;
+}
+
+.flag-new {
+  margin: 0;
+  padding: 0;
+
+  background-image: url(../img/new-flag.png);
 }
 
 .promo-item h3 {
@@ -240,3 +261,20 @@ img {
 .promoslider-2 {
   background: #563c35 url(../img/promoslider-2.jpg) no-repeat;
 }
+
+.slider-item-button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.slider-item-button:hover,
+.slider-item-button:focus {
+  background-color: #ca2c37;
+}
+
+.slider-item-button:active {
+  background-color: #ba2732;
+}
+
+/* Популярные товары*/
+
