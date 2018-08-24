@@ -761,6 +761,28 @@ img {
   border: 1px solid #ee3643;
 }
 
+/* Описание продукта в каталоге */
+
+.about-product {
+  background-color: #f2f6f8;
+}
+
+.about-product h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-product p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
 
 
 /* Футер */
