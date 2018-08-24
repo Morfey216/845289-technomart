@@ -11,11 +11,11 @@ body {
 a {
   text-decoration: none;
 }
-
+/*
 img {
   max-width: 100%;
   height: auto;
-}
+}*/
 
 .wrapper {
   width: 940px;
@@ -81,6 +81,7 @@ img {
 }
 
 .logo {
+  flex-shrink: 0;
   width: 220px;
   padding: 9px 0;
   font-size: 24px;
@@ -115,6 +116,8 @@ img {
 /* Поиск по сайту */
 
 .main-search {
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 270px;
   margin: 0;
   padding-top: 12px;
@@ -158,17 +161,24 @@ img {
 /* Закладки Корзина Заказ */
 
 .bookmarks {
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 12px 0;
   padding-left: 44px;
+  text-align: center;
+
 }
 
 .basket {
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 12px 0;
   padding-left: 50px;
+  text-align: center;
 }
 
 .bookmarks:hover,
@@ -185,6 +195,8 @@ img {
 }
 
 .checkout {
+  flex-shrink: 0;
+  box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 12px 0;
@@ -469,10 +481,19 @@ padding-bottom: 1px;
 /* Популярные товары*/
 
 .popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 25px 24px;
+  margin-bottom: 20px;
+  
   background-color: #f9f5f0;
 }
 
 .popular-header h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -481,8 +502,14 @@ padding-bottom: 1px;
 }
 
 .popular-button {
+  box-sizing: border-box;
+  width: 253px;
+  margin: 0;
+  padding: 10px auto;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+
 }
 
 .popular-button:hover,
@@ -495,7 +522,21 @@ padding-bottom: 1px;
 }
 
 .popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+  
   list-style: none;
+}
+
+.popular-item {
+  margin: 0;
+  margin-right: 20px;
+  width: 218px;
+  flex-shrink: 0;
+  border: 1px solid #eaeaea;
 }
 
 .item-title {
