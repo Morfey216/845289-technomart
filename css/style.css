@@ -17,6 +17,12 @@ img {
   height: auto;
 }
 
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .button {
   display: inline-block;
   margin-right: 16px;
@@ -39,6 +45,9 @@ img {
 }
 
 .order-navigation {
+  margin 0;
+  padding: 0;
+  margin-bottom: 46px;
   font-size: 17px;
   line-height: 18px;
   
@@ -67,16 +76,26 @@ img {
 }
 */
 
+.order-navigation .wrapper {
+  display: flex;
+}
+
 .logo {
+  width: 220px;
+  padding: 9px 0;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+  box-shadow: 0 5px 0 #b52933;
+  
   cursor: pointer;
 }
 
 .footer-top .logo {
+  padding: 19px 0;
   font-size: 30px;
   line-height: 30px;
 }
@@ -84,14 +103,22 @@ img {
 .logo:hover ,
 .logo:focus {
   background-color: #ca2c37;
+  box-shadow: 0 5px 0 #9a212a;
 }
 
 .logo:active {
   background-color: #ba2732;
+  box-shadow: 0 5px 0 #8e1e26;
 }
 
 
 /* Поиск по сайту */
+
+.main-search {
+  width: 270px;
+  margin: 0;
+  padding-top: 12px;
+}
 
 .main-search input{
   font-size: 17px;
@@ -130,6 +157,20 @@ img {
 
 /* Закладки Корзина Заказ */
 
+.bookmarks {
+  width: 150px;
+  margin: 0;
+  padding: 12px 0;
+  padding-left: 44px;
+}
+
+.basket {
+  width: 150px;
+  margin: 0;
+  padding: 12px 0;
+  padding-left: 50px;
+}
+
 .bookmarks:hover,
 .bookmarks:focus,
 .basket:hover,
@@ -144,6 +185,10 @@ img {
 }
 
 .checkout {
+  width: 150px;
+  margin: 0;
+  padding: 12px 0;
+  text-align: center;
   background-color: #63a63e;
 }
 
@@ -155,6 +200,11 @@ img {
 .checkout:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
+}
+
+.header-info {
+  display: flex;
+  margin-bottom: 40px;
 }
 
 .main-header h1 {
@@ -245,16 +295,44 @@ img {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.main-header {
+padding-bottom: 1px;
+}
+
 .main-navigation {
+  width: 940px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  
   color: #ffffff;
   background-color: #293449;
+  box-shadow: 0 5px 0 #293449;
 }
 
 .site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
   background-color: #32425c;
 }
 
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  flex-grow: 1;
+
+}
+
 .site-navigation a {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  /*margin: 0;*/
+  padding: 19px 0;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -269,6 +347,7 @@ img {
 .site-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+  box-shadow: 0 5px 0 #1d2739;
 }
 
 
