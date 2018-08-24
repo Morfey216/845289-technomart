@@ -709,7 +709,8 @@ img {
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-link:active {
+.sorting-link:active,
+.sorting-checked {
   color: #ee3643;
   border: none;
 }
@@ -719,7 +720,8 @@ img {
   fill: #231F20;
 }
 
-.sorting-button:active path{
+.sorting-button:active path,
+.indicator-checked path{
   fill: #ee3643;
 }
 
