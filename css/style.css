@@ -577,6 +577,71 @@ img {
   background-color: #f7f3ec;
 }
 
+.skroll {
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 80px;
+  margin-bottom: 9px;
+  
+  border: 1px solid #f7f3ec;
+  border-radius: 3px;
+
+}
+
+.range__block {
+  position: relative;
+  background: #d7dcde;
+  width: 180px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+
+.range__bar {
+  height: 2px;
+  
+  width: 80%;
+  margin-left: 0px;
+  
+  background: #00ca74;
+  
+}
+
+
+.skroll_min,
+.skroll_max {
+  background: white;
+  border:none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top:-9px;
+}
+
+.skroll_min:before,
+.skroll_max:before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #ababab;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.skroll_min {
+  left: 0px;
+}
+
+.skroll_max {
+  left: 80%;
+}
+
+
+
 .price-fild {
   border: none;
   border-radius: 3px;

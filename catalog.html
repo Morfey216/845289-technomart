@@ -85,11 +85,13 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
-            <!-- Дописать ...  -->
+            
             <div class="skroll">
-              <button class="skroll_left"></button>
-              <button class="skroll_right"></button>
-              <div class="skroll_field"></div>
+              <div class="range__block">
+                <div class="range__bar"></div>
+                <button class="skroll_min"></button>
+                <button class="skroll_max"></button>
+              </div>
             </div>
             <label class="visually-hidden" for="min-price">Минимальная цена</label>
             <input class="price-fild" name="min-price" type="text" id="min-price" value="0">
