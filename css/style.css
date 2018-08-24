@@ -96,7 +96,7 @@ img {
 .main-search input{
   font-size: 17px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
   
   background-color: transparent;
   border: none;
@@ -118,8 +118,8 @@ img {
   fill: rgba(255, 255, 255, 1);
 }
 
-.main-search:active,
-.main-search:focus {
+
+.main-search input:focus {
   color: #000000;
   background: #ffffff;
 }
