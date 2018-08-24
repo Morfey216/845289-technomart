@@ -64,25 +64,44 @@ img {
   background-color: #ba2732;
 }
 
+/* Поиск по сайту */
+
 .main-search input{
   font-size: 17px;
   line-height: 18px;
-  color: #ffffff;
+  color: #000000;
   
   background-color: transparent;
   border: none;
 }
 
-/*
-.main-search:hover {
-  background-color: 212a3a;
+.main-search input::placeholder {
+  color: #ffffff;
 }
 
-.main-search input:active {
-  color: #000000;
-  background-color: #ffffff;
+.main-search path {
+  fill: rgba(255, 255, 255, 0.3);
 }
-*/
+
+.main-search:hover {
+  background-color: #212a3a;
+}
+
+.main-search:hover path {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.main-search:active,
+.main-search:focus {
+  color: #000000;
+  background: #ffffff;
+}
+
+.main-search:active path {
+  fill: #ee3643;
+}
+
+/* Закладки Корзина Заказ */
 
 .bookmarks:hover,
 .bookmarks:focus,
