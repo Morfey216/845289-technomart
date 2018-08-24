@@ -576,7 +576,20 @@ padding-bottom: 1px;
 /* Популярные производители */
 
 .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
+}
+
+.brand-list li {
+  width: 220px;
+  height: 145px;
+  margin: 0 20px 20px 0;
+  
+  border: 1px solid #eaeaea;
 }
 
 /* Блок сервисов */
