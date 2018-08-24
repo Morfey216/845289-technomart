@@ -49,6 +49,8 @@ img {
   color: #ffffff;
 }
 
+/*
+
 .logo img {
   margin: 0;
   padding: 13px 55px;
@@ -63,6 +65,31 @@ img {
 .logo:active img {
   background-color: #ba2732;
 }
+*/
+
+.logo {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+  cursor: pointer;
+}
+
+.footer-top .logo {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.logo:hover ,
+.logo:focus {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
 
 /* Поиск по сайту */
 
