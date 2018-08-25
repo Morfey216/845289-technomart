@@ -525,18 +525,20 @@ padding-bottom: 1px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 21px;
   padding: 0;
   
   list-style: none;
 }
 
 .popular-item {
-  margin: 0;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
   width: 218px;
   flex-shrink: 0;
   border: 1px solid #eaeaea;
+}
+
+.popular-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .item-title {
@@ -590,6 +592,10 @@ padding-bottom: 1px;
   margin: 0 20px 20px 0;
   
   border: 1px solid #eaeaea;
+}
+
+.brand-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* Блок сервисов */
