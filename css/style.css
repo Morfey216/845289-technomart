@@ -167,7 +167,8 @@ img {
   background: #ffffff;
 }
 
-.main-search:active path {
+.main-search:active path,
+.main-search input:focus + label > svg > path {
   fill: #ee3643;
 }
 
