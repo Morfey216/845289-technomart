@@ -736,8 +736,25 @@ padding-bottom: 1px;
 
 /* Блок о компании и контакты */
 
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+.about {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .about h2,
 .contacts h2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
