@@ -595,10 +595,14 @@ padding-bottom: 1px;
 /* Блок сервисов */
 
 .services {
+  padding-top: 65px;
   background-color: #f4f8fa;
 }
 
 .services h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -607,43 +611,121 @@ padding-bottom: 1px;
 }
 
 .services p {
+  width: 400px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
 
+.services-slider {
+  display: flex;
+  justify-content: space-between;
+}
+
 .services-control-list,
 .services-slider-list {
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
 
+.services-control-list {
+  width: 240px;
+}
+
+.services-slider-list {
+  width: 620px;
+}
+
 .service-control-button {
+  
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  padding-left: 23px;
+  
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   color: #ffffff;
   text-transform: none;
-  background-color: #32425c
+  text-align: left;
+  
+  background-color: #32425c;
+  border: none;
+  box-shadow: 0 1px 0 #405069;
 }
 
 .service-control-button:hover,
 .service-control-button:focus {
   background-color: #293449;
+  box-shadow: 0 1px 0 #405069;
 }
 
-.service-control-button:active {
+.service-control-button:active,
+.sbtn-checked {
   color: #32425c;
   background-color: #ffffff;
+  box-shadow: 0 1px 0 #ffffff;
 }
 
+.services-slider-item {
+  min-height: 285px;
+}
 
 .services-slider-list h3 {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
+}
+
+.services-slider-list p {
+  margin: 0;
+  padding: 0;
+}
+
+.slide-1 p {
+  width: 280px;
+}
+
+.slide-2 p {
+  width: 375px;
+}
+
+.slide-3 p {
+  width: 300px;
+}
+
+.slide-1 {
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.slide-2 {
+  background-image: url(../img/guarantee.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.slide-3 {
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.services-slider-item {
+  display: none;
+}
+
+.service-slide-checked {
+  display: block;
 }
 
 /* Блок о компании и контакты */
