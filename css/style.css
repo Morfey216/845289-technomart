@@ -118,12 +118,25 @@ img {
 .main-search {
   flex-shrink: 0;
   box-sizing: border-box;
+  position: relative;
+  
   width: 270px;
   margin: 0;
-  padding-top: 12px;
+
+}
+
+.main-search label {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
 }
 
 .main-search input{
+  box-sizing: border-box;
+  width: 270px;
+  padding: 12px 10px 12px 46px;
+  
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
