@@ -1130,6 +1130,7 @@ padding-bottom: 1px;
 }
 
 .sorting-product h3 {
+  width: 200px;
   margin: 0;
   padding: 10px 19px;
 }
@@ -1137,7 +1138,9 @@ padding-bottom: 1px;
 .sorting-list {
   display: flex;
   margin: 0;
-  padding: 0;
+  margin-right: 20px;
+  padding: 10px 0;
+  width: 380px;
   list-style: none;
 }
 
@@ -1158,6 +1161,20 @@ padding-bottom: 1px;
   border: none;
 }
 
+.direction {
+  padding: 10px 0;
+  width: 60px;
+}
+
+.sorting-button {
+  margin: 0;
+}
+
+.sorting-down-button {
+  margin-left: 20px;
+}
+
+
 .sorting-button:hover path,
 .sorting-button:focus path{
   fill: #231F20;
@@ -1175,6 +1192,7 @@ padding-bottom: 1px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   
   list-style: none;
@@ -1256,6 +1274,10 @@ padding-bottom: 1px;
 /* Постраничная навигация */
 
 .pagination-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
   list-style: none;
 }
 
@@ -1301,6 +1323,9 @@ padding-bottom: 1px;
 }
 
 .about-product h2 {
+  margin: 0;
+  padding: 0;
+  
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1309,6 +1334,9 @@ padding-bottom: 1px;
 }
 
 .about-product p {
+  margin: 0;
+  padding: 0;
+  
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1322,7 +1350,7 @@ padding-bottom: 1px;
 
 
 .main-footer {
-  margin-top: 85px;
+  /*margin-top: 85px;*/
   background-color: #32425c;
 }
 
