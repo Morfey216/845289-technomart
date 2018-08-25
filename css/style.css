@@ -1138,17 +1138,40 @@ padding-bottom: 1px;
 
 /* Футер */
 
+
 .main-footer {
   background-color: #32425c;
+}
+
+.footer-top,
+.footer-middle {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom {
   background-color: #293449;
 }
 
+.footer-bottom .wrapper {
+  display: flex;
+
+}
+
 .footer-main-menu,
 .promo-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
+}
+
+.footer-main-menu li,
+.promo-menu li {
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
 }
 
 .footer-main-menu a {
@@ -1167,8 +1190,15 @@ padding-bottom: 1px;
   text-decoration: none;
 }
 
+.footer-contacts {
+  width: 380px;
+
+}
+
 .footer-contacts p,
 .footer-contacts a {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
@@ -1190,11 +1220,26 @@ padding-bottom: 1px;
   text-decoration: none;
 }
 
+.footer-copyright {
+  width: 240px;
+  padding: 0;
+  margin: 0;
+  margin-right: 150px;
+  
+}
+
 .footer-copyright,
 .developer-caption {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.footer-social {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  margin-right: 100px;
 }
 
 .footer-social ul {
@@ -1209,6 +1254,12 @@ padding-bottom: 1px;
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
+}
+
+.footer-contact-links {
+  display: flex;
+  width: 300px;
+
 }
 
 .footer-link {
