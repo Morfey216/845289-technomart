@@ -340,7 +340,7 @@ padding-bottom: 1px;
 }
 
 .site-navigation a {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   display: inline-block;
   width: 100%;
   /*margin: 0;*/
@@ -585,7 +585,7 @@ padding-bottom: 1px;
 }
 
 .brand-list li {
-  width: 220px;
+  width: 218px;
   height: 145px;
   margin: 0 20px 20px 0;
   
