@@ -341,8 +341,8 @@ img {
 }
 
 .main-header {
-padding-bottom: 1px;
-margin-bottom: 59px;
+  padding-bottom: 1px;
+  margin-bottom: 59px;
 }
 
 .inner-header {
@@ -421,7 +421,7 @@ margin-bottom: 59px;
   margin-bottom: 20px;
   
   width: 300px;
-  height: 123px;
+  min-height: 123px;
 }
 
 .promo-item:nth-child(3n) {
@@ -525,7 +525,7 @@ margin-bottom: 59px;
 
 .promo-slider-item {
   width: 620px;
-  height: 266px;
+  min-height: 266px;
   margin: 0;
   padding: 0;
 }
@@ -1212,7 +1212,7 @@ margin-bottom: 59px;
   position: relative;
   box-sizing: border-box;
   width: 220px;
-  min-height: 318;
+  min-height: 318px;
   margin: 0;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1556,6 +1556,12 @@ margin-bottom: 59px;
   background: url(../img/modal-map.jpg) no-repeat;
 }
 */
+
+.modal-map iframe {
+  width:940px;
+  height:446px;
+  border:0;
+}
 
 /* Окно добавления товара в корзину */
 
