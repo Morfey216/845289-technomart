@@ -1,4 +1,5 @@
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -11,11 +12,29 @@ body {
 a {
   text-decoration: none;
 }
-/*
+
 img {
   max-width: 100%;
   height: auto;
-}*/
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .wrapper {
   width: 940px;
@@ -55,6 +74,7 @@ img {
 }
 
 .order-navigation a {
+  display: block;
   color: #ffffff;
 }
 
@@ -81,7 +101,7 @@ img {
 }
 
 .logo {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
   width: 220px;
   padding: 9px 0;
   font-size: 24px;
@@ -116,7 +136,7 @@ img {
 /* Поиск по сайту */
 
 .main-search {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
   box-sizing: border-box;
   position: relative;
   
@@ -135,7 +155,7 @@ img {
 .main-search input{
   box-sizing: border-box;
   width: 270px;
-  padding: 12px 10px 12px 46px;
+  padding: 12px 10px 12px 48px;
   
   font-size: 17px;
   line-height: 18px;
@@ -175,24 +195,60 @@ img {
 /* Закладки Корзина Заказ */
 
 .bookmarks {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
+  position: relative;
+  
   box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 12px 0;
   padding-left: 44px;
-  text-align: center;
+  text-align: left;
 
 }
 
+.bookmarks::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  
+  width: 14px;
+  height: 16px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
 .basket {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
+  position: relative;
+  
   box-sizing: border-box;
   width: 150px;
   margin: 0;
   padding: 12px 0;
   padding-left: 50px;
-  text-align: center;
+  text-align: left;
+}
+
+.basket::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  
+  width: 15px;
+  height: 15px;
+  
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .bookmarks:hover,
@@ -208,8 +264,17 @@ img {
   background-color: #161d29;
 }
 
+.bookmarks:hover::before,
+.bookmarks:focus::before,
+.bookmarks:active::before,
+.basket:hover::before,
+.basket:focus::before,
+.basket:active::before {
+  opacity: 1;
+}
+
 .checkout {
-  flex-shrink: 0;
+  /*flex-shrink: 0;*/
   box-sizing: border-box;
   width: 150px;
   margin: 0;
@@ -379,11 +444,12 @@ img {
 
 .site-navigation a {
   /*box-sizing: border-box;*/
-  display: inline-block;
-  width: 100%;
+  display: block;
+  /*width: 100%;*/
   /*margin: 0;*/
-  padding: 19px 0;
+  padding: 19px 32px;
   font-size: 17px;
+  vertical-align: middle;
   line-height: 17px;
   color: #ffffff;
 }
