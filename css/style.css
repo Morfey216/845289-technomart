@@ -299,7 +299,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header h1 {
-  width: 250px;
+  width: 248px;
   margin: 0;
   padding: 0;
   padding-left: 52px;
@@ -310,25 +310,44 @@ input[type="radio"].visually-hidden {
   line-height: 23px;
   text-transform: none;
   color: #ee3643;
+  
 }
 
 .header-contacts {
   width: 270px;
-
+  margin-left: 20px;
 }
 
 .header-phone {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 12px 0;
-  padding-left: 75px;
+  position: relative;
+  display: block;
+  /*box-sizing: border-box;*/
+  /*width: 100%;*/
+  padding: 9px 0;
+  padding-left: 72px;
+  
   margin-bottom: 5px;
   
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
   border: 3px solid #ffffff;
+}
+
+.header-phone::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  
+  width: 19px;
+  height: 19px;
+  
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
 }
 
 .header-contacts p {
@@ -340,20 +359,61 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.user-navigation,
-.site-navigation {
+.user-navigation {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
   list-style: none;
+  font-size: 0;
+}
+
+.user-navigation li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .user-button {
+  display: block;
+  margin: 0;
+  padding: 12px 0;
+  
   font-size: 21px;
   line-height: 21px;
   text-transform: none;
-  text-align: center;
+  
   color: #000000;
   vertical-align: middle;
   background-color: #ffffff;
   
+}
+
+.login-link,
+.active-user-name {
+  display: flex;
+  position: relative;
+  width: 121px;
+  margin-right: 10px;
+  
+}
+.login-link p {
+  padding: 0;
+  margin: 0;
+  padding-left: 47px;
+}
+
+.login-icon {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+
+ }
+
+
+
+.registration-link {
+  width: 150px;
+  text-align: center;
 }
 
 .user-button:hover,
@@ -365,6 +425,11 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3)
 }
 
+.login-link:hover path,
+.login-link:focus path{
+  fill: #32425c;
+}
+
 .active-user p {
   background-color: #ffffff;
 }
@@ -374,6 +439,8 @@ input[type="radio"].visually-hidden {
 .logout-link:hover,
 .logout-link:focus {
   color: #000000;
+  
+  background: rgba(255, 45, 82, 0.5);
 }
 
 .active-user-name:active {
@@ -432,6 +499,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   /*justify-content: space-around;*/
   background-color: #32425c;
+  
+  list-style: none;
 }
 
 .site-navigation li {
