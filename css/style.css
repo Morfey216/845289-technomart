@@ -359,7 +359,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.user-navigation {
+.user-navigation,
+.active-user-link {
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -367,7 +368,8 @@ input[type="radio"].visually-hidden {
   font-size: 0;
 }
 
-.user-navigation li {
+.user-navigation li,
+.active-user-link li{
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -388,8 +390,7 @@ input[type="radio"].visually-hidden {
   
 }
 
-.login-link,
-.active-user-name {
+.login-link {
   display: flex;
   position: relative;
   width: 121px;
@@ -430,8 +431,39 @@ input[type="radio"].visually-hidden {
   fill: #32425c;
 }
 
-.active-user p {
-  background-color: #ffffff;
+.active-user {
+  position: relative;
+  margin-left: auto;
+  
+}
+
+.active-user-link {
+  margin-bottom: 7px;
+}
+
+.active-user-name {
+  display: flex;
+  position: relative;
+  /*width: 300px;*/
+}
+
+.active-user-name .login-icon {
+  position: absolute;
+  left: 13px;
+  top: 12px;
+
+ }
+
+
+.active-user-name p{
+  padding: 0;
+  margin: 0;
+  padding-left: 47px;
+  padding-right: 28px;
+}
+
+.logout-link {
+  padding: 12px 10px;
 }
 
 .active-user-name:hover,
@@ -440,11 +472,19 @@ input[type="radio"].visually-hidden {
 .logout-link:focus {
   color: #000000;
   
-  background: rgba(255, 45, 82, 0.5);
+}
+
+.active-user-name:hover path,
+.active-user-name:focus path {
+  fill: #32425c;
 }
 
 .active-user-name:active {
   color:rgba(0, 0, 0, 0.3);
+}
+
+.active-user-name:active path{
+  fill: #c5c5c5;
 }
 
 .logout-link:hover path,
@@ -452,8 +492,24 @@ input[type="radio"].visually-hidden {
   fill: #000000;
 }
 
+.logout-link:active path{
+  fill: #c5c5c5;
+}
+
 .active-user-navigation{
+  position: absolute;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+  right: 70px;
+
   list-style: none;
+}
+
+.active-user-navigation li{
+  margin: 0;
+  padding: 0;
 }
 
 .active-user-navigation a {
@@ -461,6 +517,18 @@ input[type="radio"].visually-hidden {
   line-height: 17px;
   color: #32425c;
   text-decoration: underline;
+}
+
+.pin {
+  display: inline-block;
+  
+  margin: 0 13px;
+  padding-bottom: 3px;
+  width: 4px;
+  height: 6px;
+  background-image: url(../img/pin.png);
+  background-repeat: no-repeat;
+  background-position: center middle;
 }
 
 .active-user-navigation a:hover,
