@@ -1025,8 +1025,8 @@ input[type="radio"].visually-hidden {
 /* Блок сервисов */
 
 .services {
-/*  margin-top: 85px;*/
   padding-top: 65px;
+  margin-bottom: 80px;
   background-color: #f4f8fa;
 }
 
@@ -1212,7 +1212,7 @@ input[type="radio"].visually-hidden {
 .contacts h2 {
   margin: 0;
   padding: 0;
-  padding-top: 80px;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1222,6 +1222,9 @@ input[type="radio"].visually-hidden {
 
 .about p,
 .contacts p {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1237,6 +1240,16 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.about-button {
+  width: 220px;
+  padding: 10px 0;
+}
+
+.contacts-button {
+  width: 100%;
+  padding: 10px 0;
+}
+
 .about-button:hover,
 .about-button:focus,
 .contacts-button:hover,
@@ -1250,12 +1263,42 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-lines {
+  margin: 0;
+  margin-bottom: 36px;
+  margin-top: 20px;
+  padding: 0;
   list-style: none;
 }
  
 .delivery-lines li { 
+  position: relative;
+  padding: 0;
+  padding-left: 37px;
+  /*margin: 12px 0;*/
+  
+  margin-top: 8px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
+}
+
+.delivery-lines li::before { 
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  
+}
+
+.small-map {
+  display: block;
+  width: 300px;
+  height: 158px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 /* Стилизация страницы каталога */
