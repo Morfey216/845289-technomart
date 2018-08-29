@@ -912,12 +912,13 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-item .image{
-  width: 186px;
-  height: 164px;
-  margin-top: 2px;
+  width: 218px;
+  height: 168px;
+
 }
 .image img{
   max-width: 100%;
+  
 }
 
 
@@ -927,7 +928,7 @@ input[type="radio"].visually-hidden {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -941,7 +942,7 @@ input[type="radio"].visually-hidden {
   display: block;
   
   min-height: 20px;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 4px;
   
   font-family: "PT Sans", "Arial", sans-serif;
@@ -991,6 +992,10 @@ input[type="radio"].visually-hidden {
 
 /* Популярные производители */
 
+.brand {
+  margin-bottom: 65px;
+}
+
 .brand-list {
   display: flex;
   flex-wrap: wrap;
@@ -1002,7 +1007,7 @@ input[type="radio"].visually-hidden {
 
 .brand-list li {
   width: 218px;
-  height: 145px;
+  height: 143px;
   margin: 0 20px 20px 0;
   
   border: 1px solid #eaeaea;
@@ -1012,9 +1017,15 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.brand-logo{
+  max-width: 100%;
+  
+}
+
 /* Блок сервисов */
 
 .services {
+/*  margin-top: 85px;*/
   padding-top: 65px;
   background-color: #f4f8fa;
 }
