@@ -667,8 +667,8 @@ input[type="radio"].visually-hidden {
 
 .flag {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
   
   margin: 0;
   padding: 0;
@@ -849,8 +849,9 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   
-  padding: 30px 30px;
+  padding: 25px 30px;
   padding-right: 24px;
+  padding-bottom: 26px;
   margin-bottom: 20px;
   
   background-color: #f9f5f0;
@@ -897,9 +898,12 @@ input[type="radio"].visually-hidden {
 
 .popular-item {
   position: relative;
+  display: inline-block;
   margin: 0 20px 20px 0;
+  padding: 0;
   width: 218px;
-  flex-shrink: 0;
+  
+  text-align:center;
   border: 1px solid #eaeaea;
 }
 
@@ -907,29 +911,73 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.popular-item .image{
+  width: 186px;
+  height: 164px;
+  margin-top: 2px;
+}
+.image img{
+  max-width: 100%;
+}
+
+
+
 .item-title {
+  /*display: block;*/
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
   color: #000000;
+
 }
 
 .discount {
+  display: block;
+  
+  min-height: 20px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #a9a9a9;
   text-decoration: line-through;
+
 }
 
 .price {
+  /*display: block;*/
+  
+  position: relative;
+  width: 80px;
+  margin: 4px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
+}
+
+.price:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -19px;
+    width: 0;
+    height: 0;
+    border: 19px solid white;
+    border-left-color: #ee3643;
 }
 
 .price:hover,
