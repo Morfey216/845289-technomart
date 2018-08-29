@@ -293,9 +293,10 @@ input[type="radio"].visually-hidden {
   background-color: #518534;
 }
 
+
 .header-info {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .main-header h1 {
@@ -407,7 +408,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 14px;
   top: 14px;
-
+  
  }
 
 
@@ -429,6 +430,12 @@ input[type="radio"].visually-hidden {
 .login-link:hover path,
 .login-link:focus path{
   fill: #32425c;
+  
+}
+
+.login-link:active path{
+  fill: #c5c5c5;
+  
 }
 
 .active-user {
@@ -540,9 +547,11 @@ input[type="radio"].visually-hidden {
   color: rgba(50, 66, 92, 0.3);
 }
 
+/* Основное меню сайта */
+
 .main-header {
   padding-bottom: 1px;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
 }
 
 .inner-header {
@@ -633,27 +642,27 @@ input[type="radio"].visually-hidden {
 
 .materials {
   background: #ffbf47 url(../img/icon-1.png) no-repeat;
-  background-position: 213px, 31px;
+  background-position: 213px 31px;
 }
 
 .tools {
   background: #3bbce3 url(../img/icon-2.png) no-repeat;
-  background-position: 197px, 33px;
+  background-position: 197px 33px;
 }
 
 .machines {
   background: #dc91d8 url(../img/icon-3.png) no-repeat;
-  background-position: 191px, 31px;
+  background-position: 191px 31px;
 }
 
 .promo-discounts {
   background: #8ed78f url(../img/icon-4.png) no-repeat;
-  background-position: 196px, 26px;
+  background-position: 196px 26px;
 }
 
 .promo-delivery {
   background: #ffbf47 url(../img/icon-5.png) no-repeat;
-  background-position: 191px, 32px;
+  background-position: 191px 32px;
 }
 
 .flag {
@@ -679,7 +688,8 @@ input[type="radio"].visually-hidden {
 
 .promo-item h3 {
   padding: 0;
-  margin-top: 23px;
+  margin: 0;
+  margin-top: 21px;
   margin-left: 22px;
   
   font-size: 24px;
@@ -689,8 +699,14 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-button {
+  margin: 0;
+  padding: 10px 0;
+  margin-left: 25px;
+  margin-top: 12px;
+  min-width: 135px;
   font-size: 14px;
   line-height: 18px;
+  vertical-align: middle;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -736,6 +752,8 @@ input[type="radio"].visually-hidden {
 .promo-slider-item h3 {
   padding: 0;
   margin: 0;
+  margin-left: 24px;
+  padding-top: 24px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -744,7 +762,10 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider-item p {
-  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+  /*font-family: "PT Sans", "Arial", sans-serif;*/
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -759,6 +780,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item-button {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  
+  min-width: 195px;
+  
+  padding: 10px 0;
+  
   font-size: 14px;
   line-height: 18px;
 }
@@ -772,17 +801,27 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-.slider-button {
+.slider-control-button {
   position: absolute;
   top: 114px;
+  
+  width: 22px;
+  height: 40px;
+  
+  margin: 0;
+  padding: 0;
 }
 
 .slider-button-back {
   left: 25px;
+  
+  background: transparent url(../img/icon-left.svg) no-repeat;
 }
 
 .slider-button-next {
   right: 20px;
+  
+  background: transparent url(../img/icon-right.svg) no-repeat;
 }
 
 .promo-slider-item {
