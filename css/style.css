@@ -64,7 +64,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-navigation {
-  margin 0;
+  margin: 0;
   padding: 0;
   margin-bottom: 46px;
   font-size: 17px;
@@ -265,6 +265,19 @@ input[type="radio"].visually-hidden {
 .basket:focus::before,
 .basket:active::before {
   opacity: 1;
+}
+
+.full-basket {
+  background-color: #ee3643;
+}
+
+.full-basket:hover,
+.full-basket:focus {
+  background-color: #ca2c37;
+}
+
+.full-basket:active {
+  background-color: #ba2732;
 }
 
 .checkout {
@@ -529,7 +542,7 @@ input[type="radio"].visually-hidden {
   height: 6px;
   background-image: url(../img/pin.png);
   background-repeat: no-repeat;
-  background-position: center middle;
+  background-position: center center;
 }
 
 .active-user-navigation a:hover,
@@ -866,7 +879,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 253px;
   margin: 0;
-  padding: 10px auto;
+  
   font-size: 14px;
   line-height: 18px;
   text-align: center;
