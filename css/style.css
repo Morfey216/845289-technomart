@@ -1535,6 +1535,14 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.by-price {
+  margin-right: 71px;
+}
+
+.by-type {
+  margin-right: 65px;
+}
+
 .sorting-link {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
