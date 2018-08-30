@@ -666,8 +666,9 @@ input[type="radio"].visually-hidden {
   
   margin: 0;
   padding: 0;
-
+  
   background-repeat: no-repeat;
+  z-index: 20;
 }
 
 .flag-new {
@@ -1200,7 +1201,7 @@ input[type="radio"].visually-hidden {
 .about-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
+  margin-bottom: 87px;
 }
 
 .about {
@@ -1641,8 +1642,18 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.catalog-item .image{
+  width: 218px;
+  height: 168px;
+
+}
+.image img{
+  max-width: 100%;
+  
+}
+
 .catalog-item .item-title {
-  margin-top: 7px;
+  margin-top: 11px;
 }
 
 .actions {
@@ -1829,7 +1840,7 @@ input[type="radio"].visually-hidden {
 .footer-top .logo {
   padding: 0;
   padding-top: 18px;
-  padding-bottom: 11px;
+  padding-bottom: 15px;
   font-size: 30px;
   line-height: 30px;
 }
@@ -1853,12 +1864,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-main-menu {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .footer-middle {
-  margin-top: 32px;
-  margin-bottom: 50px;
+  margin-top: 33px;
+  margin-bottom: 49px;
 }
 
 .footer-main-menu li,
