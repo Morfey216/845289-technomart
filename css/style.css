@@ -964,7 +964,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.price:after{
+.price::after{
     content: "";
     position: absolute;
     top: 0;
@@ -980,8 +980,17 @@ input[type="radio"].visually-hidden {
   background-color: #ca2c37;
 }
 
+.price:hover::after,
+.price:focus::after {
+  border-left-color: #ca2c37;
+}
+
 .price:active {
   background-color: #ba2732;
+}
+
+.price:active::after {
+  border-left-color: #ba2732;
 }
 
 /* Популярные производители */
@@ -1308,7 +1317,8 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li {
-  padding: 21px 16px;
+  padding: 20px 0;
+  padding-right: 40px;
 }
 
 .breadcrumbs a,
@@ -1495,6 +1505,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-product {
   display: flex;
+  margin-bottom: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -1580,13 +1591,14 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   position: relative;
-  box-sizing: border-box;
-  width: 220px;
-  min-height: 318px;
+  /*box-sizing: border-box;*/
+  width: 218px;
+  /*min-height: 318px;*/
   margin: 0;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0;
+  text-align:center;
   
   border: 1px solid #e5e5e5
 }
@@ -1595,13 +1607,29 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.catalog-item .item-title {
+  margin-top: 6px;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
 .buy,
 .bookmark {
   display: block;
+  width: 129px;
   margin: 0 auto;
   margin-bottom: 7px;
-
-  border:3px solid #63a63e;
+  padding: 7px 0;
+  border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
   background-color: #63a63e;
