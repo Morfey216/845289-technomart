@@ -110,22 +110,24 @@
                     <button class="skroll_max"></button>
                   </div>
                 </div>
-                <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                <input class="price-fild" name="min-price" type="text" id="min-price" value="0">
-                <span>-</span>
-                <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                <input class="price-fild" name="max-price" type="text" id="max-price" value="30000">
+                <div class="price-filds">
+                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                  <input class="price-fild" name="min-price" type="text" id="min-price" value="0">
+                  <span>—</span>
+                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                  <input class="price-fild" name="max-price" type="text" id="max-price" value="30000">
+                </div>
               </fieldset>
               
               <fieldset>
                 <legend>Производители:</legend>
-                <ul>
+                <ul class="filter-list">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                     <label for="filter-bosch">BOSCH</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol" disabled>
                     <label for="filter-interskol">Интерскол</label>
                   </li>
                   <li class="filter-option">
@@ -143,9 +145,9 @@
                 </ul>
               </fieldset>
               
-              <fieldset>
+              <fieldset class="power-set">
                 <legend>Питание:</legend>
-                <ul>
+                <ul class="filter-list">
                   <li class="filter-option">
                     <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="battery" id="filter-battery" checked>
                     <label for="filter-battery">Аккумуляторные</label>
