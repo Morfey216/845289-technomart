@@ -1310,6 +1310,8 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   
@@ -1317,8 +1319,32 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs li {
+  position: relative;
+  
   padding: 20px 0;
-  padding-right: 40px;
+  padding-right: 42px;
+}
+
+.breadcrumbs li:last-child {
+  padding-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  right: 17px;
+
+  width: 8px;
+  height: 12px;
+  
+  background-image: url(../img/icon-right-small.svg);
+  
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a,
@@ -1332,7 +1358,7 @@ input[type="radio"].visually-hidden {
 
 .instrument-caption {
   padding: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   
   background-color: #f2f6f8;
 }
