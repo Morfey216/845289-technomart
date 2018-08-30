@@ -1782,9 +1782,15 @@ input[type="radio"].visually-hidden {
   background-color: #f2f6f8;
 }
 
+.about-product .wrapper{
+  padding-top: 65px;
+  padding-bottom: 68px;
+}
+
 .about-product h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 26px;
   
   font-size: 30px;
   line-height: 30px;
