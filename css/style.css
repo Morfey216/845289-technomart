@@ -1034,9 +1034,27 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
+.brand-list li:hover,
+.brand-list li:focus {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+.brand-list li:active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+/*
+.brand-list li:active + a{
+  opacity: 0.3;
+}*/
+
+
 .brand-logo{
   max-width: 100%;
-  
+}
+
+.brand-logo:active{
+  opacity: 0.3;
 }
 
 /* Блок сервисов */
@@ -1129,6 +1147,8 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
   border: none;
   box-shadow: 0 1px 0 #405069;
+  
+  cursor: pointer;
 }
 
 .service-control-button:hover,
@@ -1485,8 +1505,11 @@ input[type="radio"].visually-hidden {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   position: absolute;
   top:-9px;
+  
+  cursor:pointer;
 }
 
 .skroll_min:before,
@@ -1769,6 +1792,7 @@ input[type="radio"].visually-hidden {
   text-align:center;
   
   border: 1px solid #e5e5e5
+  
 }
 
 .catalog-item:nth-child(3n){
@@ -1851,8 +1875,15 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
+.popular-item:hover .actions,
 .catalog-item:hover .actions{
   display: block;
+  
+}
+
+.popular-item:hover,
+.catalog-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 
