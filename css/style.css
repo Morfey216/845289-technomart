@@ -2181,15 +2181,95 @@ input[type="radio"].visually-hidden {
 /* Модальные окна */
 
 .modal {
+  position: fixed;
+
   color:#000000;
   background-color: #ffffff;
+  
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
-.modal-control {
-  background-color: #f4f4f4;
+/* Обратная связь*/
+
+.modal-write {
+  
+  bottom: 206px;
+  left: 50%;
+  margin-left: -310px;
+  
+  padding-top: 47px;
+  
+  border-top: 7px solid #ff5357;
 }
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  
+  width: 28px;
+  height: 28px;
+
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 4px;
+
+  width: 27px;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: #ff5357;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.write-us {
+  width: 620px;
+}
+
+.write-us  p {
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  width: 460px;
+}
+
+.user-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+}
+
+.user-data p {
+  width: 220px;
+  margin: 0;
+}
+
 
 .write-us label {
+  display: inline-block;
+  margin-bottom: 9px;
+  
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -2199,6 +2279,10 @@ input[type="radio"].visually-hidden {
 .write-us input[type="text"],
 .write-us input[type="email"],
 .write-us textarea {
+  box-sizing: border-box;
+  width: 220px;
+  padding: 8px 15px;
+  
   
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -2207,6 +2291,14 @@ input[type="radio"].visually-hidden {
       
   
   border: 2px solid #d7dcde;
+}
+
+.write-us textarea {
+
+  width: 460px;
+  min-height: 114px;
+  padding: 10px 15px;
+
 }
 
 .write-us input:hover,
@@ -2221,7 +2313,16 @@ input[type="radio"].visually-hidden {
   
 }
 
+.modal-control {
+  padding: 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
 .writeus-button {
+  margin: 37px auto;
+  width: 460px;
+  
   font-size: 14px;
   line-height: 18px;
 }
