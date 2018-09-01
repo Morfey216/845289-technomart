@@ -2193,13 +2193,13 @@ input[type="radio"].visually-hidden {
 /* Обратная связь*/
 
 .modal-write {
-  
   bottom: 206px;
   left: 50%;
+  
+  display: none;
+  
   margin-left: -310px;
-  
   padding-top: 47px;
-  
   border-top: 7px solid #ff5357;
 }
 
@@ -2337,6 +2337,19 @@ input[type="radio"].visually-hidden {
   background: url(../img/modal-map.jpg) no-repeat;
 }
 */
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+  
+  width:940px;
+  height:447px;
+  margin-top: -276px;
+  margin-left: -470px;
+  background-image: url(../img/modal-map.jpg);
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+  border:0;
+}
 
 .modal-map iframe {
   width:940px;
