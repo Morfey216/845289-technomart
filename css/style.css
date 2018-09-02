@@ -103,7 +103,11 @@ input[type="radio"].visually-hidden {
 .logo {
   /*flex-shrink: 0;*/
   width: 220px;
-  padding: 9px 0;
+  /*padding: 9px 0;*/
+  padding: 11px 0 7px 1px;
+  /*padding-top: 11px;
+  padding-bottom: 7px;*/
+  
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -225,7 +229,7 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0;
   padding: 12px 0;
-  padding-left: 50px;
+  padding-left: 49px;
   text-align: left;
 }
 
@@ -286,7 +290,8 @@ input[type="radio"].visually-hidden {
   width: 150px;
   margin: 0;
   padding: 12px 0;
-  text-align: center;
+  padding-left: 20px;
+  /*text-align: center;*/
   background-color: #63a63e;
 }
 
@@ -303,7 +308,7 @@ input[type="radio"].visually-hidden {
 
 .header-info {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .main-header h1 {
@@ -311,7 +316,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-left: 52px;
-  
+  padding-top: 3px;
   font-size: 16px;
   font-style: italic;
   font-weight: normal;
@@ -329,12 +334,8 @@ input[type="radio"].visually-hidden {
 .header-phone {
   position: relative;
   display: block;
-  /*box-sizing: border-box;*/
-  /*width: 100%;*/
-  padding: 9px 0;
-  padding-left: 72px;
-  
-  margin-bottom: 5px;
+ 
+  padding: 10px 0 8px 71px;
   
   font-size: 21px;
   line-height: 21px;
@@ -346,8 +347,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 11px;
-  left: 14px;
+  top: 10px;
+  left: 12px;
   
   width: 19px;
   height: 19px;
@@ -360,6 +361,7 @@ input[type="radio"].visually-hidden {
 
 .header-contacts p {
   margin: 0;
+  margin-top: 4px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -558,7 +560,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   padding-bottom: 1px;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
 }
 
 .inner-header {
@@ -569,7 +571,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 65px;
+  margin-bottom: 64px;
   
   color: #ffffff;
   background-color: #293449;
@@ -674,8 +676,6 @@ input[type="radio"].visually-hidden {
 
 .flag {
   position: absolute;
-  top: -1px;
-  right: -1px;
   
   margin: 0;
   padding: 0;
@@ -685,7 +685,8 @@ input[type="radio"].visually-hidden {
 }
 
 .flag-new {
-  
+  top: -1px;
+  right: -1px;
   margin: 0;
   padding: 0;
   width: 60px;
@@ -694,11 +695,16 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/new-flag.png);
 }
 
+.promo-item  .flag-new {
+  top: 0;
+  right: 0;
+}
+
 .promo-item h3 {
   padding: 0;
   margin: 0;
   margin-top: 21px;
-  margin-left: 22px;
+  margin-left: 23px;
   
   font-size: 24px;
   line-height: 30px;
@@ -2196,7 +2202,7 @@ input[type="radio"].visually-hidden {
   bottom: 206px;
   left: 50%;
   
-  /*display: none;*/
+  display: none;
   
   margin-left: -310px;
   padding-top: 47px;
@@ -2362,11 +2368,12 @@ input[type="radio"].visually-hidden {
 /* Окно добавления товара в корзину */
 
 .add-to-basket {
-  top: 411px;
+  top: 50%;
   left: 50%;
 
   width: 620px;
   margin-left: -310px;
+  margin-top: -122px;
   
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
@@ -2382,7 +2389,7 @@ input[type="radio"].visually-hidden {
   padding-left: 100px;
   margin-top: 47px;
   margin-bottom: 49px;
-  margin-left: 80px;
+  margin-left: 81px;
   
   background-image: url(../img/form-check.svg);
   background-repeat: no-repeat;
@@ -2390,6 +2397,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-button {
+ 
   width: 220px;
   font-size: 14px;
   line-height: 18px;
@@ -2398,7 +2406,8 @@ input[type="radio"].visually-hidden {
   padding: 10px 0px;
 }
 .make-order {
-  margin-right: 20px;
+  margin-right: 15px;
+
 }
 
 .make-order:hover {
