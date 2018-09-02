@@ -513,19 +513,23 @@ input[type="radio"].visually-hidden {
 }
 
 .active-user-navigation{
-  position: absolute;
+
   display: flex;
   margin: 0;
   padding: 0;
-  
-  right: 70px;
 
-  list-style: none;
 }
 
 .active-user-navigation li{
   margin: 0;
   padding: 0;
+  
+}
+
+.active-user-navigation li:first-child {
+  margin-left: 19px;
+  margin-right: 27px;
+  list-style-type: none;
 }
 
 .active-user-navigation a {
@@ -535,6 +539,7 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
+/*
 .pin {
   display: inline-block;
   
@@ -546,6 +551,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center center;
 }
+*/
 
 .active-user-navigation a:hover,
 .active-user-navigation a:focus {
@@ -1393,7 +1399,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   
   padding: 20px 0;
-  padding-right: 42px;
+  padding-right: 41px;
 }
 
 .breadcrumbs li:last-child {
@@ -1429,7 +1435,9 @@ input[type="radio"].visually-hidden {
 
 .instrument-caption {
   padding: 30px;
-  margin-bottom: 18px;
+  padding-left: 28px;
+  padding-bottom: 29px;
+  margin-bottom: 20px;
   
   background-color: #f2f6f8;
 }
@@ -1482,10 +1490,16 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border:none;
   border-bottom: 1px solid #e5e5e5;
 }
+
+.filter .brand-set {
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
 .filter .power-set {
   border-bottom: 1px solid transparent;
 
@@ -1567,7 +1581,7 @@ input[type="radio"].visually-hidden {
 }
 
 .skroll_max {
-  left: 80%;
+  left: 78%;
 }
 
 .price-filds {
@@ -1580,8 +1594,10 @@ input[type="radio"].visually-hidden {
   /*display: inline-block;*/
   box-sizing: border-box;
   
-  padding: 10px;
+  /*padding: 10px;*/
   width: 95px;
+  padding-top: 9px;
+  padding-bottom: 11px;
   text-align: center;
   border: none;
   border-radius: 3px;
@@ -1695,8 +1711,10 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   margin: 0;
-  margin-top: 35px;
-  width: 138px;
+  margin-top: 37px;
+  width: 140px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   
   font-size: 13px;
   line-height: 18px;
@@ -1743,7 +1761,7 @@ input[type="radio"].visually-hidden {
 .sorting-product h3 {
   width: 200px;
   margin: 0;
-  padding: 10px 19px;
+  padding: 10px 21px 10px 19px;
 }
 
 .sorting-list {
@@ -1790,7 +1808,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-down-button {
-  margin-left: 20px;
+  margin-left: 17px;
 }
 
 
