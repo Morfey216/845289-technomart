@@ -267,16 +267,16 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.full-basket {
+.add-product {
   background-color: #ee3643;
 }
 
-.full-basket:hover,
-.full-basket:focus {
+.add-product:hover,
+.add-product:focus {
   background-color: #ca2c37;
 }
 
-.full-basket:active {
+.add-product:active {
   background-color: #ba2732;
 }
 
@@ -2295,10 +2295,10 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us textarea {
-
   width: 460px;
   min-height: 114px;
   padding: 10px 15px;
+  resize: none;
 
 }
 
@@ -2364,16 +2364,14 @@ input[type="radio"].visually-hidden {
 .add-to-basket {
   top: 411px;
   left: 50%;
-  
+
   width: 620px;
-  /*display: none;*/
-  
   margin-left: -310px;
   
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   
-  
+  display: none;
 }
 
 .add-to-basket p {
