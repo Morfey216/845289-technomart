@@ -582,8 +582,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 11px;
+  padding-right: 10px;
   flex-wrap: wrap;
-  /*justify-content: space-around;*/
+  justify-content: center;
   background-color: #32425c;
   
   list-style: none;
@@ -593,7 +595,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   text-align: center;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
 
 }
 
@@ -602,7 +604,7 @@ input[type="radio"].visually-hidden {
   display: block;
   /*width: 100%;*/
   /*margin: 0;*/
-  padding: 19px 32px;
+  padding: 20px 32px 18px 29px;
   font-size: 17px;
   vertical-align: middle;
   line-height: 17px;
@@ -714,7 +716,7 @@ input[type="radio"].visually-hidden {
 
 .promo-button {
   margin: 0;
-  padding: 10px 0;
+  padding: 11px 0 9px 0;
   margin-left: 25px;
   margin-top: 12px;
   min-width: 135px;
@@ -723,6 +725,12 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.machines .promo-button,
+.promo-discounts .promo-button,
+.promo-delivery .promo-button {
+  margin-left: 23px;
 }
 
 .promo-button:hover,
@@ -767,7 +775,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-left: 24px;
-  padding-top: 24px;
+  padding-top: 23px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -778,7 +786,8 @@ input[type="radio"].visually-hidden {
 .promo-slider-item p {
   margin: 0;
   padding: 0;
-  margin-left: 24px;
+  margin-left: 25px;
+  margin-top: 2px;
   /*font-family: "PT Sans", "Arial", sans-serif;*/
   font-size: 18px;
   line-height: 24px;
@@ -797,10 +806,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 25px;
   bottom: 22px;
+  box-sizing: border-box;
+  width: 195px;
   
-  min-width: 195px;
-  
-  padding: 10px 0;
+  padding: 11px 0 9px 5px;
   
   font-size: 14px;
   line-height: 18px;
@@ -863,7 +872,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   
-  padding: 25px 30px;
+  padding: 25px 28px;
   padding-right: 24px;
   padding-bottom: 26px;
   margin-bottom: 20px;
@@ -873,6 +882,7 @@ input[type="radio"].visually-hidden {
 
 .popular-header h2 {
   margin: 0;
+  margin-top: 1px;
   padding: 0;
   font-size: 30px;
   line-height: 30px;
@@ -881,14 +891,27 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.brand-header  {
+  padding-left: 24px;
+}
+
+.brand-header  h2 {
+  margin-top: 1px;
+}
+
 .popular-button {
   box-sizing: border-box;
   width: 253px;
   margin: 0;
-  
+  padding-top: 11px;
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+
+}
+.brand-header  .popular-button{
+  padding: 10px 30px;
 
 }
 
@@ -905,6 +928,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 1px;
   padding: 0;
   
   list-style: none;
@@ -941,7 +965,7 @@ input[type="radio"].visually-hidden {
   /*display: block;*/
   min-height: 40px;
   padding: 0 25px;
-  margin-top: 12px;
+  margin-top: 11px;
   margin-bottom: 11px;
   
   font-family: "PT Sans", "Arial", sans-serif;
@@ -958,7 +982,7 @@ input[type="radio"].visually-hidden {
   min-height: 20px;
   margin-top: 10px;
   margin-bottom: 4px;
-  
+  margin-left: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -974,8 +998,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 80px;
   margin: 4px auto;
+  margin-left: 3px;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 10px 28px;
   
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -988,7 +1013,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: 0;
-    right: -19px;
+    right: -24px;
     width: 0;
     height: 0;
     border: 19px solid white;
@@ -1074,7 +1099,7 @@ input[type="radio"].visually-hidden {
 .services h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1094,7 +1119,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services .wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 68px;
 }
 
 .services-slider {
@@ -1128,7 +1153,7 @@ input[type="radio"].visually-hidden {
 
 .services-control-list {
   width: 240px;
-  padding-top: 2px;
+  /*padding-top: 2px;*/
 }
 
 .services-slider-list {
@@ -1177,8 +1202,10 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider-list h3 {
-  margin: 0;
-  margin-bottom: 26px;
+  /*margin: 0;*/
+  margin-top: -1px;
+  margin-bottom: 25px;
+  margin-left: 1px;
   padding: 0;
   font-size: 36px;
   line-height: 36px;
@@ -1240,7 +1267,7 @@ input[type="radio"].visually-hidden {
 .about-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 87px;
+  margin-bottom: 86px;
 }
 
 .about {
@@ -1285,12 +1312,16 @@ input[type="radio"].visually-hidden {
 
 .about-button {
   width: 220px;
-  padding: 10px 0;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .contacts-button {
+  box-sizing: border-box;
   width: 100%;
-  padding: 10px 0;
+  padding: 11px 0 9px 5px;
+
 }
 
 .about-button:hover,
@@ -1308,7 +1339,7 @@ input[type="radio"].visually-hidden {
 .delivery-lines {
   margin: 0;
   margin-bottom: 36px;
-  margin-top: 20px;
+  margin-top: 21px;
   padding: 0;
   list-style: none;
 }
@@ -1340,7 +1371,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 300px;
   height: 158px;
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 40px;
 }
 
@@ -1825,7 +1856,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 218px;
   height: 88px;
-  padding: 40px 0;
+  padding: 45px 0;
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
 }
@@ -2045,7 +2076,7 @@ input[type="radio"].visually-hidden {
 .footer-main-menu li,
 .promo-menu li {
   margin: 0;
-  margin-left: 60px;
+  margin-left: 59px;
   padding: 0;
 }
 
@@ -2073,6 +2104,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts p,
 .footer-contacts a {
   margin: 0;
+  margin-left: 3px;
   padding: 0;
   font-size: 18px;
   line-height: 24px;
@@ -2103,8 +2135,10 @@ input[type="radio"].visually-hidden {
 .footer-copyright {
   width: 240px;
   padding: 0;
+  padding-left: 2px;
   margin: 0;
-  margin-right: 150px;
+  margin-top: 1px;
+  margin-right: 147px;
   
 }
 
@@ -2119,7 +2153,7 @@ input[type="radio"].visually-hidden {
   width: 150px;
   padding: 0;
   margin: 0;
-  margin-right: 100px;
+  /*margin-right: 100px;*/
 }
 
 .footer-social ul {
@@ -2130,7 +2164,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-social li {
   display: inline-block;
-  width: 40px;
+  width: 41px;
   height: 40px;
   margin: 0 2px;
   background-color: #212a3a;
@@ -2155,7 +2189,9 @@ input[type="radio"].visually-hidden {
 
 .footer-contact-links {
   display: flex;
-  width: 300px;
+  width: 299px;
+  margin-top: 1px;
+  margin-left: 102px;
 
 }
 
@@ -2165,7 +2201,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-developer {
-  margin-left: 48px;
+  margin-left: 50px;
 }
 
 .footer-link {
