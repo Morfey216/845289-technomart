@@ -416,7 +416,7 @@ input[type="radio"].visually-hidden {
 .login-icon {
   position: absolute;
   left: 14px;
-  top: 14px;
+  top: 13px;
   
  }
 
@@ -454,7 +454,8 @@ input[type="radio"].visually-hidden {
 }
 
 .active-user-link {
-  margin-bottom: 7px;
+  display: flex;
+  margin-bottom: 8px;
 }
 
 .active-user-name {
@@ -462,24 +463,24 @@ input[type="radio"].visually-hidden {
   position: relative;
   /*width: 300px;*/
 }
-
+/*
 .active-user-name .login-icon {
   position: absolute;
-  left: 13px;
+  left: 14px;
   top: 12px;
 
- }
+ }*/
 
 
 .active-user-name p{
   padding: 0;
   margin: 0;
   padding-left: 47px;
-  padding-right: 28px;
+  padding-right: 26px;
 }
 
 .logout-link {
-  padding: 12px 10px;
+  padding: 14px 10px 10px;
 }
 
 .active-user-name:hover,
@@ -512,7 +513,7 @@ input[type="radio"].visually-hidden {
   fill: #c5c5c5;
 }
 
-.active-user-navigation{
+.active-user-navigation {
 
   display: flex;
   margin: 0;
@@ -527,7 +528,7 @@ input[type="radio"].visually-hidden {
 }
 
 .active-user-navigation li:first-child {
-  margin-left: 19px;
+  margin-left: 17px;
   margin-right: 27px;
   list-style-type: none;
 }
