@@ -840,6 +840,8 @@ input[type="radio"].visually-hidden {
   
   margin: 0;
   padding: 0;
+  
+  cursor: pointer;
 }
 
 .slider-button-back {
@@ -852,6 +854,41 @@ input[type="radio"].visually-hidden {
   right: 20px;
   
   background: transparent url(../img/icon-right.svg) no-repeat;
+}
+
+.promo-slide-indicator {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  width: 30px;
+  height: 10px;
+  transform: translateX(-50%);
+}
+
+.indicator-slide-1,
+.indicator-slide-2 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.indicator-select::before {
+  content: "";
+  
+  position: absolute;
+  top: 2px;
+  left: 2px;
+ 
+  width: 6px;
+  height: 6px;
+  
+  background: #ee3643;
+  border-radius: 50%;
 }
 
 .promo-slider-item {
