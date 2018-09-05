@@ -1957,6 +1957,8 @@ input[type="radio"].visually-hidden {
 }
 
 .buy:hover {
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
   background-color: #5fbb2d;
 }
 
