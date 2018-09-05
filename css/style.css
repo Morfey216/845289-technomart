@@ -1908,7 +1908,7 @@ input[type="radio"].visually-hidden {
 
 .actions {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 218px;
   height: 88px;
@@ -1920,10 +1920,11 @@ input[type="radio"].visually-hidden {
 .buy,
 .bookmark {
   display: block;
-  width: 129px;
+  box-sizing: border-box;
+  width: 135px;
   margin: 0 auto;
-  margin-bottom: 7px;
-  padding: 7px 0;
+  margin-bottom: 8px;
+  padding: 8px 0px 6px 3px;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius: 3px;
@@ -1938,6 +1939,23 @@ input[type="radio"].visually-hidden {
 
 }
 
+.buy {
+  position: relative;
+}
+
+.buy::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
 .buy:hover {
   background-color: #5fbb2d;
 }
@@ -1945,6 +1963,10 @@ input[type="radio"].visually-hidden {
 .buy:active {
   background-color: #518534;
   border-color: #518534;
+}
+
+.buy:hover::before {
+  opacity: 1;
 }
 
 .bookmark {
