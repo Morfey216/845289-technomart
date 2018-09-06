@@ -1016,19 +1016,8 @@ input[type="radio"].visually-hidden {
 .services-slider {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  /*position: relative;*/
   margin-top: 66px;
-}
-
-.shadow {
-  position: absolute;
-  top: -48px;
-  left: 230px;
-  width: 10px;
-  height: 279px;
-  background-image: url(../img/shadow.png);
-  background-position: right center;
-  background-repeat: no-repeat;
 }
 
 .services-control-list,
@@ -1039,7 +1028,20 @@ input[type="radio"].visually-hidden {
 }
 
 .services-control-list {
+  position: relative;
   width: 240px;
+}
+
+ .services-control-list::after{
+  content: "";
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 10px;
+  height: 279px;
+  background-image: url(../img/shadow.png);
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .services-slider-list {
@@ -1691,6 +1693,7 @@ input[type="radio"].visually-hidden {
   width: 218px;
   height: 168px;
 }
+
 .image img {
   max-width: 100%;
 }
@@ -2068,6 +2071,9 @@ input[type="radio"].visually-hidden {
 
 .modal {
   position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color:#000000;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
@@ -2077,10 +2083,7 @@ input[type="radio"].visually-hidden {
 /* Обратная связь*/
 
 .modal-write {
-  bottom: 206px;
-  left: 50%;
   display: none;
-  margin-left: -310px;
   padding-top: 47px;
   border-top: 7px solid #ff5357;
 }
@@ -2197,13 +2200,11 @@ input[type="radio"].visually-hidden {
  background-color: #b22832;
 }
 
+/* Интерактивная карта */
+
 .modal-map {
-  top: 50%;
-  left: 50%;
   width:940px;
   height:447px;
-  margin-top: -276px;
-  margin-left: -470px;
   background-image: url(../img/modal-map.jpg);
   box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
   border:0;
@@ -2219,11 +2220,7 @@ input[type="radio"].visually-hidden {
 /* Окно добавления товара в корзину */
 
 .add-to-basket {
-  top: 50%;
-  left: 50%;
   width: 620px;
-  margin-left: -310px;
-  margin-top: -122px;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   display: none;
