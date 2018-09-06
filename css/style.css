@@ -739,19 +739,20 @@ input[type="radio"].visually-hidden {
   bottom: 36px;
   width: 30px;
   height: 10px;
+  font-size: 0;
   transform: translateX(-50%);
 }
 
-.indicator-slide-1,
-.indicator-slide-2 {
+.slider-indicator-item + label {
   position: relative;
   width: 10px;
   height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
-.indicator-select::before {
+.slider-indicator-item:checked + label::before {
   content: "";
   position: absolute;
   top: 2px;
