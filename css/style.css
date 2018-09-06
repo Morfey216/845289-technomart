@@ -257,9 +257,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header h1 {
-  width: 248px;
+  width: 225px;
   margin: 0;
-  padding: 0;
+  padding: 3px 23px 0 52px;
   padding-left: 52px;
   padding-top: 3px;
   font-size: 16px;
@@ -1716,13 +1716,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 135px;
   margin: 0 auto;
-  margin-bottom: 8px;
-  padding: 8px 0px 6px 3px;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
   border-radius: 3px;
-  background-color: #63a63e;
-  color: #ffffff;
   font-family: "Cuprum", "Arial Narrow", sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -1732,13 +1726,18 @@ input[type="radio"].visually-hidden {
 
 .buy {
   position: relative;
+  padding: 11px 0px 6px 3px;
+  margin-bottom: 11px;
+  color: #ffffff;
+  background-color: #63a63e;
+  box-shadow: 0 3px 0 #367315;
 }
 
 .buy::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 11px;
+  top: 11px;
+  left: 14px;
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-cart.svg);
@@ -1748,14 +1747,12 @@ input[type="radio"].visually-hidden {
 }
 
 .buy:hover {
-  border-color: #5fbb2d;
-  border-bottom-color: #367315;
   background-color: #5fbb2d;
 }
 
 .buy:active {
   background-color: #518534;
-  border-color: #518534;
+  box-shadow: 0 3px 0 #518534;
 }
 
 .buy:hover::before {
@@ -1763,8 +1760,10 @@ input[type="radio"].visually-hidden {
 }
 
 .bookmark {
+  margin-bottom: 8px;
+  padding: 8px 0px 6px 3px;
   color: #32425c;
-  border-color: #63a63e;
+  border: 3px solid #63a63e;
   background-color: #ffffff;
 }
 
