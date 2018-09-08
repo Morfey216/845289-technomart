@@ -2083,9 +2083,9 @@ input[type="radio"].visually-hidden {
 /* Обратная связь*/
 
 .modal-write {
-  display: none;
   padding-top: 47px;
   border-top: 7px solid #ff5357;
+  display: none;
 }
 
 .modal-close {
@@ -2264,4 +2264,10 @@ input[type="radio"].visually-hidden {
 .continue-shopping:hover {
   color: #ffffff;
   background-color: #999999;
+}
+
+/* Показываем модальное окно */
+
+.modal-show {
+  display: block;
 }
