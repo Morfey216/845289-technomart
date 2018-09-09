@@ -77,7 +77,7 @@ if (document.body.className === "main-page") {
   form.addEventListener("submit",function(evt){
     if (!user_name.value || !user_mail.value) {
       evt.preventDefault();
-      console.log("Введите данные"); 
+      write_popap.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("user_name", user_name.value);
@@ -88,6 +88,7 @@ if (document.body.className === "main-page") {
   write_close.addEventListener("click",function(evt){
     evt.preventDefault();
     write_popap.classList.remove("modal-show");
+    write_popap.classList.remove("modal-error");
   });
 
   // Окно интерактивной карты
@@ -109,6 +110,7 @@ if (document.body.className === "main-page") {
       evt.preventDefault();
       if (write_popap.classList.contains("modal-show")) {
         write_popap.classList.remove("modal-show");
+        write_popap.classList.remove("modal-error");
       }
       if (map_popap.classList.contains("modal-show")) {
         map_popap.classList.remove("modal-show");
