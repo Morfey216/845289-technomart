@@ -5,6 +5,12 @@ if (document.body.className === "main-page") {
   var write_btn = document.querySelector(".contacts-button");
   var write_popap = document.querySelector(".modal-write");
   var write_close = write_popap.querySelector(".modal-close");
+  var form = write_popap.querySelector("form");
+  var user_name = form.querySelector("input[type=text]");
+  var user_mail = form.querySelector("input[type=email]");
+  
+  var isStorageSupport = true;
+  var storage = "";
 
   var map_btn = document.querySelector(".small-map");
   var map_popap = document.querySelector(".modal-map");
@@ -12,9 +18,32 @@ if (document.body.className === "main-page") {
 
   // Окно обратной связи
 
+  try {
+    storage = localStorage.getItem("user_name");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+  
   write_btn.addEventListener("click",function(evt){
     evt.preventDefault();
     write_popap.classList.add("modal-show");
+    if (storage) {
+      user_name.value = storage;
+      user_mail.focus();
+    } else {
+      user_name.focus();
+    }
+  });
+  
+  form.addEventListener("submit",function(evt){
+    if (!user_name.value || !user_mail.value) {
+      evt.preventDefault();
+      console.log("Введите данные"); 
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("user_name", user_name.value);
+      }
+    }
   });
 
   write_close.addEventListener("click",function(evt){
