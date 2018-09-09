@@ -54,6 +54,16 @@ if (document.body.className === "main-page") {
   var map_btn = document.querySelector(".small-map");
   var map_popap = document.querySelector(".modal-map");
   var map_close = map_popap.querySelector(".modal-close");
+  
+  var service_btns = document.querySelectorAll(".service-control-button");
+  var service_btn1 = service_btns.item(0);
+  var service_btn2 = service_btns.item(1);
+  var service_btn3 = service_btns.item(2);
+  var service_sliders = document.querySelector(".services-slider-list");
+  var s_slide1 = service_sliders.querySelector(".slide-1");
+  var s_slide2 = service_sliders.querySelector(".slide-2");
+  var s_slide3 = service_sliders.querySelector(".slide-3");
+  
 
   // Окно обратной связи
 
@@ -117,5 +127,38 @@ if (document.body.className === "main-page") {
       }
     }
   });
+  
+  // Переключение слайдов блока Сервисы
+   
+  service_btn1.addEventListener("click",function(evt){
+    evt.preventDefault();
+    service_btn2.classList.remove("sbtn-checked");
+    service_btn3.classList.remove("sbtn-checked");
+    s_slide2.classList.remove("service-slide-checked");
+    s_slide3.classList.remove("service-slide-checked");
+    s_slide1.classList.add("service-slide-checked");
+    service_btn1.classList.add("sbtn-checked");
+  });
+  
+  service_btn2.addEventListener("click",function(evt){
+    evt.preventDefault();
+    service_btn1.classList.remove("sbtn-checked");
+    service_btn3.classList.remove("sbtn-checked");
+    s_slide1.classList.remove("service-slide-checked");
+    s_slide3.classList.remove("service-slide-checked");
+    s_slide2.classList.add("service-slide-checked");
+    service_btn2.classList.add("sbtn-checked");
+  });
+  
+  service_btn3.addEventListener("click",function(evt){
+    evt.preventDefault();
+    service_btn1.classList.remove("sbtn-checked");
+    service_btn2.classList.remove("sbtn-checked");
+    s_slide1.classList.remove("service-slide-checked");
+    s_slide2.classList.remove("service-slide-checked");
+    s_slide3.classList.add("service-slide-checked");
+    service_btn3.classList.add("sbtn-checked");
+  });
+  
 }
 

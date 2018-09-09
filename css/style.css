@@ -1066,8 +1066,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.service-control-button:hover,
-.service-control-button:focus {
+.service-control-button:hover {
   color: #ffffff;
   background-color: #293449;
   box-shadow: 0 1px 0 #405069;
