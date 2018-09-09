@@ -1,3 +1,42 @@
+// Общий код
+
+var add_btn = document.querySelectorAll(".buy");
+var add_popap = document.querySelector(".add-to-basket");
+var add_close = add_popap.querySelector(".modal-close");
+var continues = add_popap.querySelector(".continue-shopping");
+
+var escKeyCode = 27;
+
+// Окно добавления товара в корзину
+
+for (var i = 0; i < add_btn.length; i++) {
+  add_btn[i].addEventListener("click",function(evt){
+  evt.preventDefault();
+  add_popap.classList.add("modal-show");
+  });
+};
+
+add_close.addEventListener("click",function(evt){
+  evt.preventDefault();
+  add_popap.classList.remove("modal-show");
+});
+
+continues.addEventListener("click",function(evt){
+  evt.preventDefault();
+  add_popap.classList.remove("modal-show");
+});
+
+// Закрытие по нажатию Esc модального окна добавления товара
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === escKeyCode) {
+      evt.preventDefault();
+      if (add_popap.classList.contains("modal-show")) {
+        add_popap.classList.remove("modal-show");
+      }
+    }
+  });
+
 // Код только для главной страницы
 
 if (document.body.className === "main-page") {
@@ -63,31 +102,18 @@ if (document.body.className === "main-page") {
     map_popap.classList.remove("modal-show");
   });
 
-}
-
-// Общий код
-
-var add_btn = document.querySelectorAll(".buy");
-var add_popap = document.querySelector(".add-to-basket");
-var add_close = add_popap.querySelector(".modal-close");
-var continues = add_popap.querySelector(".continue-shopping");
-
-// Окно добавления товара в корзину
-
-for (var i = 0; i < add_btn.length; i++) {
-  add_btn[i].addEventListener("click",function(evt){
-  evt.preventDefault();
-  add_popap.classList.add("modal-show");
+  // Закрытие по нажатию Esc модального окна обратной связи или карты
+  
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === escKeyCode) {
+      evt.preventDefault();
+      if (write_popap.classList.contains("modal-show")) {
+        write_popap.classList.remove("modal-show");
+      }
+      if (map_popap.classList.contains("modal-show")) {
+        map_popap.classList.remove("modal-show");
+      }
+    }
   });
-};
-
-add_close.addEventListener("click",function(evt){
-  evt.preventDefault();
-  add_popap.classList.remove("modal-show");
-});
-
-continues.addEventListener("click",function(evt){
-  evt.preventDefault();
-  add_popap.classList.remove("modal-show");
-});
+}
 
