@@ -64,7 +64,12 @@ if (document.body.className === "main-page") {
   var s_slide2 = service_sliders.querySelector(".slide-2");
   var s_slide3 = service_sliders.querySelector(".slide-3");
   
-
+  var promo_sliders = document.querySelectorAll(".promo-slider-item");
+  var currentSlide = 0;
+  var previous = document.querySelector(".slider-button-back");
+  var next = document.querySelector(".slider-button-next");
+  var indicators = document.querySelectorAll(".slider-indicator-item");
+  
   // Окно обратной связи
 
   try {
@@ -128,8 +133,32 @@ if (document.body.className === "main-page") {
     }
   });
   
+  // Переключение слайдов промо-блока
+  
+  previous.addEventListener("click",function(evt){
+    evt.preventDefault();
+    promo_sliders[currentSlide].classList.remove("promo-slider-checked");
+    currentSlide = currentSlide-1; 
+    if (currentSlide < 0) { 
+      currentSlide = promo_sliders.length-1; 
+    }
+    promo_sliders[currentSlide].classList.add("promo-slider-checked");
+    indicators[currentSlide].checked = true;
+  });
+  
+  next.addEventListener("click",function(evt){
+    evt.preventDefault();
+    promo_sliders[currentSlide].classList.remove("promo-slider-checked");
+    currentSlide++; 
+    if (currentSlide >= promo_sliders.length) { 
+      currentSlide = 0; 
+    }
+    promo_sliders[currentSlide].classList.add("promo-slider-checked");
+    indicators[currentSlide].checked = true;
+  });
+  
   // Переключение слайдов блока Сервисы
-   
+  
   service_btn1.addEventListener("click",function(evt){
     evt.preventDefault();
     service_btn2.classList.remove("sbtn-checked");
