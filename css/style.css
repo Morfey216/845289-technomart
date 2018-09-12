@@ -309,6 +309,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation,
 .active-user-link {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -318,7 +319,6 @@ input[type="radio"].visually-hidden {
 
 .user-navigation li,
 .active-user-link li {
-  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -383,7 +383,6 @@ input[type="radio"].visually-hidden {
 }
 
 .active-user-link {
-  display: flex;
   margin-bottom: 8px;
 }
 
@@ -463,6 +462,10 @@ input[type="radio"].visually-hidden {
 
 .active-user-navigation a:active {
   color: rgba(50, 66, 92, 0.3);
+}
+
+.user-toggle {
+  display: none;
 }
 
 /* Основное меню сайта */
