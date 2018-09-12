@@ -1517,6 +1517,10 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.filter-input-checkbox:checked:hover + label::before {
+  background-image: url(../img/checkbox-on-hover.svg);
+}
+
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
