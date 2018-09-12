@@ -850,7 +850,6 @@ input[type="radio"].visually-hidden {
 
 .popular-item {
   position: relative;
-  display: inline-block;
   margin: 0 20px 20px 0;
   padding: 0;
   width: 218px;
@@ -2021,6 +2020,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-social li {
   display: inline-block;
+  vertical-align: middle;
   width: 41px;
   height: 40px;
   margin: 0 2px;
@@ -2156,6 +2156,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
   font-size: 18px;
   line-height: 18px;
+  vertical-align: middle;
   color: #000000;
 }
 
