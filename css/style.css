@@ -826,6 +826,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-align: center;
 }
+
 .brand-header  .popular-button {
   padding: 10px 30px;
 }
@@ -1018,7 +1019,6 @@ input[type="radio"].visually-hidden {
 .services-slider {
   display: flex;
   justify-content: space-between;
-  /*position: relative;*/
   margin-top: 66px;
 }
 
@@ -1212,7 +1212,6 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   padding: 11px 0 9px 5px;
-
 }
 
 .about-button:hover,
@@ -1253,7 +1252,6 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 2px;
   background-color: #ee3643;
-  
 }
 
 .small-map {
@@ -1328,7 +1326,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-/* columns */
+/* Колонки */
 
 .columns {
   display: flex;
@@ -1437,7 +1435,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
 .skroll_min {
@@ -2025,7 +2023,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   margin: 0 2px;
   background-color: #212a3a;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .social-button {
